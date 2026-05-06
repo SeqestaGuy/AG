@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artur Gulinski — Operations Leader</title>
+<meta name="description" content="Operations leader who scales teams, builds systems, and thrives in regulated complexity. Available Q2 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0b0c0d;
+  --bg2:#111214;
+  --bg3:#18191c;
+  --bg4:#1f2023;
+  --border:rgba(255,255,255,0.06);
+  --border2:rgba(255,255,255,0.11);
+  --border3:rgba(255,255,255,0.18);
+  --text:#ede9e2;
+  --text2:#8c8780;
+  --text3:#4e4c48;
+  --accent:#b8ff45;
+  --accent-dim:rgba(184,255,69,0.1);
+  --amber:#f5a623;
+  --font-display:'DM Serif Display',Georgia,serif;
+  --font-sans:'Syne',sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+  --radius:10px;
+  --max:1080px;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 2.5rem;background:rgba(11,12,13,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:var(--font-mono);font-size:12px;color:var(--text3);letter-spacing:0.05em}
+.nav-logo span{color:var(--accent)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:12px;color:var(--text2);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:11px;color:var(--accent);letter-spacing:0.06em;background:rgba(184,255,69,0.1);border:1px solid rgba(184,255,69,0.2);padding:6px 14px;border-radius:100px;text-decoration:none;transition:all 0.2s}
+.nav-cta:hover{background:rgba(184,255,69,0.18)}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:blink 2s ease-in-out infinite;flex-shrink:0}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+
+/* LAYOUT */
+.container{max-width:var(--max);margin:0 auto;padding:0 2.5rem}
+section{padding:7rem 0}
+
+/* HERO */
+#hero{padding-top:10rem;padding-bottom:5rem;position:relative;overflow:hidden}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(184,255,69,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(184,255,69,0.025) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 90% 70% at 50% 0%,black 10%,transparent 100%);pointer-events:none}
+.hero-inner{display:grid;grid-template-columns:1fr 360px;gap:4rem;align-items:center}
+.availability-badge{display:inline-flex;align-items:center;gap:8px;margin-bottom:1.25rem;font-family:var(--font-mono);font-size:11px;color:var(--amber);letter-spacing:0.06em;background:rgba(245,166,35,0.1);border:1px solid rgba(245,166,35,0.2);padding:6px 14px;border-radius:100px}
+.dot-amber{width:5px;height:5px;border-radius:50%;background:var(--amber);animation:blink 1.5s ease-in-out infinite;flex-shrink:0}
+.hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:1.75rem}
+.hero-eyebrow-line{width:32px;height:1px;background:var(--accent);flex-shrink:0}
+.hero-eyebrow span{font-family:var(--font-mono);font-size:11px;color:var(--accent);letter-spacing:0.12em;text-transform:uppercase}
+h1{font-family:var(--font-display);font-size:clamp(3.2rem,6.5vw,6.5rem);line-height:0.9;letter-spacing:-0.01em;margin-bottom:1.5rem}
+h1 em{font-style:italic;color:var(--text2)}
+.hero-sub{font-size:1.05rem;color:var(--text2);max-width:500px;line-height:1.75;margin-bottom:2.25rem}
+.hero-sub strong{color:var(--text);font-weight:700}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#0b0c0d;font-family:var(--font-sans);font-weight:700;font-size:13px;letter-spacing:0.04em;padding:12px 24px;border-radius:100px;text-decoration:none;border:none;cursor:pointer;transition:all 0.2s}
+.btn-primary:hover{background:#ceff6b;transform:translateY(-1px)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--text2);font-family:var(--font-sans);font-weight:500;font-size:13px;letter-spacing:0.04em;padding:12px 24px;border-radius:100px;text-decoration:none;border:1px solid var(--border2);transition:all 0.2s;cursor:pointer}
+.btn-secondary:hover{color:var(--text);border-color:var(--border3)}
+
+/* PHOTO */
+.photo-card{border-radius:16px;overflow:hidden;border:1px solid var(--border2);background:var(--bg3)}
+.photo-card img{width:100%;display:block;filter:grayscale(10%) contrast(1.05);transition:filter 0.4s}
+.photo-card:hover img{filter:grayscale(0%) contrast(1.08)}
+.photo-card-footer{padding:1.25rem 1.5rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.photo-card-name{font-weight:700;font-size:14px;color:var(--text)}
+.photo-card-role{font-family:var(--font-mono);font-size:9px;color:var(--text3);letter-spacing:0.06em;margin-top:2px}
+.press-tag{font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-dim);border:1px solid rgba(184,255,69,0.18);padding:4px 10px;border-radius:100px;text-decoration:none;transition:all 0.2s;white-space:nowrap}
+.press-tag:hover{background:rgba(184,255,69,0.2)}
+
+/* STATS */
+.stats-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border2);border-radius:var(--radius);overflow:hidden;margin-top:4.5rem}
+.stat{background:var(--bg2);padding:2rem 1.75rem;position:relative;cursor:default;transition:background 0.2s}
+.stat:hover{background:var(--bg3)}
+.stat::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:transparent;transition:background 0.3s}
+.stat:hover::before{background:var(--accent)}
+.stat-num{font-family:var(--font-display);font-size:2.75rem;line-height:1;color:var(--text);margin-bottom:0.5rem}
+.stat-num span{color:var(--accent)}
+.stat-lbl{font-family:var(--font-mono);font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.08em}
+
+/* COMMON */
+.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:0.75rem}
+.eyebrow-num{font-family:var(--font-mono);font-size:10px;color:var(--text3);letter-spacing:0.1em}
+.eyebrow-label{font-family:var(--font-mono);font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.1em}
+.section-head{margin-bottom:3.5rem}
+h2{font-family:var(--font-display);font-size:clamp(2.2rem,4.5vw,3.5rem);line-height:1.05;margin-bottom:0.75rem}
+.section-sub{font-size:1rem;color:var(--text2);max-width:520px;line-height:1.7}
+
+/* PROOF */
+#proof{background:var(--bg)}
+.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border2);border-radius:var(--radius);overflow:hidden}
+.proof-card{background:var(--bg2);padding:2.5rem;transition:background 0.2s}
+.proof-card:hover{background:var(--bg3)}
+.proof-num{font-family:var(--font-display);font-size:3.2rem;color:var(--accent);line-height:1;margin-bottom:0.6rem}
+.proof-title{font-size:0.95rem;font-weight:700;color:var(--text);margin-bottom:0.4rem}
+.proof-desc{font-size:0.875rem;color:var(--text2);line-height:1.65}
+.proof-tag{display:inline-block;margin-top:1rem;font-family:var(--font-mono);font-size:9px;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:100px;background:var(--accent-dim);color:var(--accent);border:1px solid rgba(184,255,69,0.15)}
+
+/* STORY */
+#story{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.story-inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
+.story-text{font-size:1.05rem;color:var(--text2);line-height:1.8;margin-bottom:1.25rem}
+.story-text strong{color:var(--text);font-weight:700}
+.press-block{margin-top:2.5rem;padding:1.75rem;border:1px solid var(--border2);border-radius:var(--radius);background:var(--bg3)}
+.press-label{font-family:var(--font-mono);font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem}
+.press-link{display:flex;align-items:flex-start;gap:10px;text-decoration:none;color:var(--text);font-size:0.875rem;font-weight:600;line-height:1.5;transition:color 0.2s}
+.press-link:hover{color:var(--accent)}
+.quote-block{border-left:2px solid var(--accent);padding:1.5rem 2rem;background:var(--bg3);border-radius:0 var(--radius) var(--radius) 0;margin-bottom:1.5rem}
+.quote-text{font-family:var(--font-display);font-style:italic;font-size:1.2rem;color:var(--text);line-height:1.55;margin-bottom:1rem}
+.quote-attr{display:flex;align-items:center;gap:10px}
+.quote-avatar{width:36px;height:36px;border-radius:50%;background:var(--bg4);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:11px;color:var(--text2);flex-shrink:0}
+.quote-name{font-size:13px;font-weight:700;color:var(--text)}
+.quote-role{font-size:11px;color:var(--text3);font-family:var(--font-mono);margin-top:2px}
+.info-card{padding:1.75rem;border:1px solid var(--border2);border-radius:var(--radius);background:var(--bg3);margin-bottom:1.5rem}
+.info-card-title{font-family:var(--font-mono);font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem}
+.info-row{display:flex;align-items:center;gap:10px;font-size:0.875rem;color:var(--text2);padding:0.3rem 0}
+.arrow-accent{color:var(--accent);flex-shrink:0}
+
+/* CAPABILITIES */
+#capabilities{background:var(--bg)}
+.cap-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border2);border-radius:var(--radius);overflow:hidden}
+.cap-card{background:var(--bg2);padding:1.75rem;transition:background 0.2s}
+.cap-card:hover{background:var(--bg3)}
+.cap-card:last-child{grid-column:1 / -1;display:grid;grid-template-columns:1fr 1fr;gap:2rem;border-top:1px solid var(--border)}
+.cap-card:last-child .cap-title{grid-column:1;font-size:0.95rem;font-weight:700;color:var(--text);margin-bottom:0.4rem}
+.cap-card:last-child .cap-desc{grid-column:2;font-size:0.85rem;color:var(--text2);line-height:1.65;margin:0;align-self:start}
+.cap-title{font-size:0.95rem;font-weight:700;color:var(--text);margin-bottom:0.6rem}
+.cap-desc{font-size:0.85rem;color:var(--text2);line-height:1.65}
+.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem}
+.how-card{padding:1.75rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg2);transition:border-color 0.2s}
+.how-card:hover{border-color:var(--border3)}
+.how-num{font-family:var(--font-mono);font-size:10px;color:var(--accent);letter-spacing:0.1em;margin-bottom:0.75rem}
+.how-title{font-size:0.9rem;font-weight:700;color:var(--text);margin-bottom:0.4rem}
+.how-desc{font-size:0.825rem;color:var(--text2);line-height:1.65}
+
+/* TOOL */
+#tool{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.tool-inner{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start}
+.tool-tag{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-mono);font-size:10px;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;background:var(--accent-dim);border:1px solid rgba(184,255,69,0.18);padding:5px 12px;border-radius:100px;margin-bottom:1.5rem}
+.tool-desc{font-size:0.95rem;color:var(--text2);line-height:1.75;margin-top:1rem}
+.tool-desc strong{color:var(--text)}
+.tool-hints{margin-top:2rem;display:flex;flex-direction:column;gap:0.5rem}
+.hint{font-family:var(--font-mono);font-size:11px;color:var(--text3);letter-spacing:0.03em;padding-left:1rem;border-left:1px solid var(--border2);line-height:1.5}
+.tool-ui{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius);overflow:hidden}
+.tool-header{padding:1rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.tool-header-dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.tool-header-label{font-family:var(--font-mono);font-size:11px;color:var(--text3);letter-spacing:0.06em}
+.tool-body{padding:1.5rem}
+.tool-label{font-family:var(--font-mono);font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.6rem;display:block}
+.tool-textarea{width:100%;min-height:110px;resize:vertical;background:var(--bg4);border:1px solid var(--border2);border-radius:8px;color:var(--text);font-family:var(--font-mono);font-size:12px;line-height:1.6;padding:0.875rem 1rem;outline:none;transition:border-color 0.2s}
+.tool-textarea:focus{border-color:rgba(184,255,69,0.35)}
+.tool-textarea::placeholder{color:var(--text3)}
+.tool-row{display:flex;gap:0.75rem;margin-top:0.75rem;flex-wrap:wrap}
+.tool-input{flex:1;min-width:120px;background:var(--bg4);border:1px solid var(--border2);border-radius:8px;color:var(--text);font-family:var(--font-sans);font-size:13px;padding:0.625rem 0.875rem;outline:none;transition:border-color 0.2s}
+.tool-input:focus{border-color:rgba(184,255,69,0.35)}
+.tool-input::placeholder{color:var(--text3)}
+.tool-submit{background:var(--accent);color:#0b0c0d;font-family:var(--font-sans);font-weight:700;font-size:13px;padding:0.625rem 1.25rem;border-radius:8px;border:none;cursor:pointer;transition:all 0.2s;white-space:nowrap;flex-shrink:0}
+.tool-submit:hover{background:#ceff6b}
+.tool-submit:disabled{opacity:0.5;cursor:not-allowed}
+.tool-output{margin-top:1rem;padding:1.25rem;background:var(--bg);border:1px solid var(--border2);border-radius:8px;display:none}
+.tool-output.visible{display:block}
+.tool-loading{display:none;align-items:center;gap:8px;margin-top:1rem;padding:0.875rem 0;font-family:var(--font-mono);font-size:11px;color:var(--text3);letter-spacing:0.04em}
+.tool-loading.visible{display:flex}
+.spinner{width:14px;height:14px;border-radius:50%;border:1.5px solid var(--border2);border-top-color:var(--accent);animation:spin 0.7s linear infinite;flex-shrink:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+.tool-error{display:none;margin-top:0.75rem;font-family:var(--font-mono);font-size:11px;color:#ff6b6b;letter-spacing:0.04em}
+.tool-error.visible{display:block}
+
+/* CONTACT */
+#contact{background:var(--bg)}
+.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.contact-links{display:flex;flex-direction:column;gap:1rem;margin-top:2rem}
+.contact-link{display:flex;align-items:center;gap:1rem;padding:1.25rem 1.5rem;border:1px solid var(--border2);border-radius:var(--radius);background:var(--bg2);text-decoration:none;transition:all 0.2s}
+.contact-link:hover{border-color:var(--border3);background:var(--bg3);transform:translateX(4px)}
+.contact-link-icon{width:40px;height:40px;border-radius:8px;background:var(--bg4);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem}
+.contact-link-label{font-family:var(--font-mono);font-size:10px;color:var(--text3);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:2px}
+.contact-link-value{font-size:0.9rem;font-weight:600;color:var(--text)}
+.contact-link-arrow{margin-left:auto;color:var(--text3);transition:color 0.2s;font-size:1.1rem;flex-shrink:0}
+.contact-link:hover .contact-link-arrow{color:var(--accent)}
+.right-panel{padding:2.5rem;border:1px solid var(--border2);border-radius:var(--radius);background:var(--bg2)}
+.avail-block{margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid var(--border)}
+.avail-title{font-family:var(--font-mono);font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem}
+.avail-status{display:flex;align-items:center;gap:10px;font-size:0.95rem;font-weight:700;color:var(--text);margin-bottom:0.5rem}
+.avail-sub{font-size:0.85rem;color:var(--text2)}
+.deal-list{list-style:none}
+.deal-list li{padding:0.625rem 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;font-size:0.875rem;color:var(--text2)}
+.deal-list li:last-child{border-bottom:none}
+.tag-yes{font-family:var(--font-mono);font-size:9px;color:var(--accent);background:var(--accent-dim);border:1px solid rgba(184,255,69,0.15);padding:2px 8px;border-radius:100px;flex-shrink:0}
+.tag-no{font-family:var(--font-mono);font-size:9px;color:#ff6b6b;background:rgba(255,107,107,0.08);border:1px solid rgba(255,107,107,0.18);padding:2px 8px;border-radius:100px;flex-shrink:0}
+
+/* FOOTER */
+footer{padding:2rem 2.5rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;max-width:100%;flex-wrap:wrap;gap:1rem}
+.footer-left{font-family:var(--font-mono);font-size:11px;color:var(--text3);letter-spacing:0.04em}
+.footer-right{display:flex;gap:2rem}
+.footer-right a{font-family:var(--font-mono);font-size:11px;color:var(--text3);text-decoration:none;letter-spacing:0.04em;transition:color 0.2s}
+.footer-right a:hover{color:var(--text2)}
+
+/* FADE */
+.fade-in{opacity:0;transform:translateY(18px);transition:opacity 0.6s ease,transform 0.6s ease}
+.fade-in.visible{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-inner,.story-inner,.tool-inner,.contact-inner{grid-template-columns:1fr;gap:3rem}
+  .stats-strip,.proof-grid,.cap-grid{grid-template-columns:1fr 1fr}
+  .how-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+  h1{font-size:3rem}
+}
+@media(max-width:600px){
+  nav{padding:1rem 1.5rem}
+  .container{padding:0 1.5rem}
+  section{padding:5rem 0}
+  .cap-grid,.how-grid{grid-template-columns:1fr}
+  .stats-strip{grid-template-columns:1fr 1fr}
+  footer{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">AG<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#proof">Proof</a></li>
+    <li><a href="#capabilities">Capabilities</a></li>
+    <li><a href="#tool">Stress-test me</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/48677487766" target="_blank" class="nav-cta">
+    <span class="dot"></span> Available Q2 2026
+  </a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-left fade-in">
+        <div class="availability-badge">
+          <span class="dot-amber"></span>
+          Open to the right next move &middot; Q2 2026
+        </div>
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line"></div>
+          <span>Operations Leader</span>
+        </div>
+        <h1>Artur<br><em>Gulinski</em></h1>
+        <p class="hero-sub">
+          I build operating systems that turn <strong>messy execution into repeatable results.</strong>
+          I've led 126 people across 10 sites, scaled a Web3 startup to $2M ARR in year one,
+          and co-built compliance infrastructure now trusted by 2,500+ platforms.
+          I lead with people first. The systems follow.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/48677487766" target="_blank" class="btn-primary">
+            Start a conversation
+          </a>
+          <a href="#tool" class="btn-secondary">
+            See how I think &rarr;
+          </a>
+        </div>
+      </div>
+      <div class="fade-in" style="transition-delay:0.15s">
+        <div class="photo-card">
+          <img
+            src="https://blockleaders.io/wp-content/uploads/2025/08/Artur-Gulinksi-.jpg"
+            alt="Artur Gulinski"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+          >
+          <div style="display:none;width:100%;height:360px;background:var(--bg4);align-items:center;justify-content:center;font-family:var(--font-mono);font-size:2rem;color:var(--text3)">AG</div>
+          <div class="photo-card-footer">
+            <div>
+              <div class="photo-card-name">Artur Gulinski</div>
+              <div class="photo-card-role">COO &middot; Operations &middot; Web3 &middot; Regulated Industries</div>
+            </div>
+            <a href="https://blockleaders.io/artur-gulinski-the-people-first-operator-building-web3s-regulatory-backbone/" target="_blank" class="press-tag">
+              Blockleaders &nearr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-strip fade-in" style="transition-delay:0.25s">
+      <div class="stat">
+        <div class="stat-num">126<span>+</span></div>
+        <div class="stat-lbl">People led directly</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">$2<span>M</span></div>
+        <div class="stat-lbl">ARR, year one &middot; Web3</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">45<span>%</span></div>
+        <div class="stat-lbl">Faster release cycles</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">2,500<span>+</span></div>
+        <div class="stat-lbl">Platforms in signed MOU</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section id="proof">
+  <div class="container">
+    <div class="section-head fade-in">
+      <div class="eyebrow">
+        <span class="eyebrow-num">01 /</span>
+        <span class="eyebrow-label">Hard Evidence</span>
+      </div>
+      <h2>Results, not rhetoric.</h2>
+      <p class="section-sub">Numbers from real organisations. Retail, startups, Web3 infrastructure. This is what operational leadership looks like with skin in the game.</p>
+    </div>
+    <div class="proof-grid fade-in">
+      <div class="proof-card">
+        <div class="proof-num">10</div>
+        <div class="proof-title">Sites, one operating system</div>
+        <div class="proof-desc">Regional operations across 10 Sainsbury's sites simultaneously. Training, safety, KPIs, and people performance unified under one framework with 126 direct reports.</div>
+        <span class="proof-tag">Retail ops</span>
+      </div>
+      <div class="proof-card">
+        <div class="proof-num">$2M</div>
+        <div class="proof-title">ARR, first 12 months</div>
+        <div class="proof-desc">Co-founded a Solana-based project scaling to $200K monthly revenue within six months. Built the operating model, team structure, and processes from zero.</div>
+        <span class="proof-tag">Web3 startup</span>
+      </div>
+      <div class="proof-card">
+        <div class="proof-num">45%</div>
+        <div class="proof-title">Faster release cycles</div>
+        <div class="proof-desc">Introduced OKR and sprint frameworks that cut release cycles by nearly half. No added headcount. Outcome-first, not process-first.</div>
+        <span class="proof-tag">Product ops</span>
+      </div>
+      <div class="proof-card">
+        <div class="proof-num">20%</div>
+        <div class="proof-title">Capital efficiency gain</div>
+        <div class="proof-desc">Identified and closed operational waste across a Web3 infrastructure project. Improved capital efficiency while maintaining delivery quality and team morale.</div>
+        <span class="proof-tag">Financial ops</span>
+      </div>
+      <div class="proof-card">
+        <div class="proof-num">2,500+</div>
+        <div class="proof-title">Platforms, one signed MOU</div>
+        <div class="proof-desc">Negotiated and closed a gaming consortium MOU covering 2,500+ platforms. A commercial wedge built through direct founder-level deal-making.</div>
+        <span class="proof-tag">B2B commercial</span>
+      </div>
+      <div class="proof-card">
+        <div class="proof-num">12%</div>
+        <div class="proof-title">Waste reduction</div>
+        <div class="proof-desc">Systematically eliminated operational waste across multi-site retail. Measurable cost savings without disrupting customer service standards or team culture.</div>
+        <span class="proof-tag">Process design</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section id="story">
+  <div class="container">
+    <div class="story-inner">
+      <div class="fade-in">
+        <div class="eyebrow">
+          <span class="eyebrow-num">02 /</span>
+          <span class="eyebrow-label">The operator</span>
+        </div>
+        <h2>People first.<br>Systems follow.</h2>
+        <p class="story-text">
+          I started at Sainsbury's, running a 126-person team across 10 sites. Not managing from above, <strong>in the middle of it.</strong> Safety, training, performance, culture. The full weight of large-scale people operations.
+        </p>
+        <p class="story-text">
+          Then came Web3. Not as a speculator but as a builder. Years deep in the ecosystem: exchanges, NFT projects, early-stage startups. I made money, lost money, and learned to build infrastructure that outlasts a cycle. When regulation arrived, I moved toward it, not away.
+        </p>
+        <p class="story-text">
+          Today I sit at the intersection most operators never reach: <strong>large-team experience, startup velocity, and regulated-industry compliance.</strong> I've worked with boards, product teams, engineering squads, and regulators. I treat everyone the same. The work earns the room.
+        </p>
+        <div class="press-block">
+          <div class="press-label">As featured in</div>
+          <a href="https://blockleaders.io/artur-gulinski-the-people-first-operator-building-web3s-regulatory-backbone/" target="_blank" class="press-link">
+            <svg style="flex-shrink:0;margin-top:2px" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            "The People-First Operator Building Web3's Regulatory Backbone" &middot; Blockleaders.io
+          </a>
+        </div>
+      </div>
+
+      <div class="fade-in" style="transition-delay:0.15s">
+        <div class="quote-block">
+          <div class="quote-text">
+            "Artur is the kind of operator you want when things get complicated. He builds trust before he builds process, and the process always holds because the people do too. Rare combination."
+          </div>
+          <div class="quote-attr">
+            <div class="quote-avatar">RP</div>
+            <div>
+              <div class="quote-name">Rodney Prescott</div>
+              <div class="quote-role">Technology Executive &amp; Strategist &middot; NZ</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-title">Where I operate best</div>
+          <div class="info-row"><span class="arrow-accent">&#8594;</span> Startups that just got complicated (Series A&ndash;C)</div>
+          <div class="info-row"><span class="arrow-accent">&#8594;</span> Regulated industries: fintech, gaming, Web3, identity</div>
+          <div class="info-row"><span class="arrow-accent">&#8594;</span> Remote-first organisations with distributed teams</div>
+          <div class="info-row"><span class="arrow-accent">&#8594;</span> Founders who need an operator, not another advisor</div>
+        </div>
+
+        <div class="info-card" style="margin-bottom:0">
+          <div class="info-card-title">Remote &amp; timezone fluent</div>
+          <p style="font-size:0.875rem;color:var(--text2);line-height:1.7">Based in Poland (CET). Experienced leading distributed teams across EU, UK, US, and APAC. Async-first, present when the room needs it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section id="capabilities">
+  <div class="container">
+    <div class="section-head fade-in">
+      <div class="eyebrow">
+        <span class="eyebrow-num">03 /</span>
+        <span class="eyebrow-label">What I bring</span>
+      </div>
+      <h2>Seven capabilities.<br>One operator.</h2>
+      <p class="section-sub">Not a generalist. A specialist in making complexity work. These are the domains where I consistently deliver.</p>
+    </div>
+    <div class="cap-grid fade-in">
+      <div class="cap-card">
+        <div class="cap-title">Operational design</div>
+        <div class="cap-desc">I map how work flows, find the gaps, build systems that scale. Process design people actually follow.</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-title">People &amp; HR leadership</div>
+        <div class="cap-desc">Hiring, performance frameworks, culture, org structure. Built and led teams from 3 to 126. People ops is where I start.</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-title">Remote team leadership</div>
+        <div class="cap-desc">Led teams across CET, GMT, US, and APAC. Trust built async, presence when the room needs it.</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-title">Stakeholder &amp; board management</div>
+        <div class="cap-desc">Investors, regulators, partners. Clear communication, no theatre. I bring data and a point of view.</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-title">Forecasting &amp; KPI systems</div>
+        <div class="cap-desc">Budgeting, OKRs, sprint cadences, reporting. Infrastructure that lets leadership decide fast.</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-title">Regulated-industry ops</div>
+        <div class="cap-desc">GDPR, MiCA, UKGC. I understand regulatory frameworks and turn them into working operational processes.</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-title">AI-augmented operations</div>
+        <div class="cap-desc">AI to eliminate predictable work, not decorate it. Workflow automation and real team integration.</div>
+      </div>
+
+    <div style="margin-top:4rem" class="fade-in">
+      <div class="eyebrow" style="margin-bottom:1.5rem">
+        <span class="eyebrow-label">How I work</span>
+      </div>
+      <div class="how-grid">
+        <div class="how-card">
+          <div class="how-num">01</div>
+          <div class="how-title">Clear ownership</div>
+          <div class="how-desc">Who owns what, by when, measured how. Ambiguity is where ops goes to die.</div>
+        </div>
+        <div class="how-card">
+          <div class="how-num">02</div>
+          <div class="how-title">Direct access</div>
+          <div class="how-desc">Direct line to founders and decision-makers. No bureaucratic relay, no message carriers.</div>
+        </div>
+        <div class="how-card">
+          <div class="how-num">03</div>
+          <div class="how-title">Outcome-based</div>
+          <div class="how-desc">Measured by results, not activity. KPIs agreed upfront, reported clearly. No vanity metrics.</div>
+        </div>
+        <div class="how-card">
+          <div class="how-num">04</div>
+          <div class="how-title">People anchor</div>
+          <div class="how-desc">Team of 3 or 130, culture comes first. Systems built on people outlast systems built on process.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI TOOL -->
+<section id="tool">
+  <div class="container">
+    <div class="tool-inner">
+      <div class="fade-in">
+        <div class="tool-tag">Live proof of work</div>
+        <h2>Tell me what's<br>broken. I'll show<br>you how I'd fix it.</h2>
+        <p class="tool-desc">
+          This isn't a chatbot. It's a window into how I think.
+          <strong>Describe your operational challenge</strong> and I'll return a structured first-take: diagnosis, priorities, and a 90-day action plan. Exactly how I'd start in the role.
+        </p>
+        <div class="tool-hints">
+          <div class="hint">Try: "We scaled from 5 to 40 people and everything is on fire"</div>
+          <div class="hint">Try: "Our release cycle takes 3 months and we don't know why"</div>
+          <div class="hint">Try: "I need a COO but don't know if we're ready for one"</div>
+          <div class="hint">Try: "We're entering a regulated market with no ops framework"</div>
+        </div>
+      </div>
+
+      <div class="fade-in" style="transition-delay:0.15s">
+        <div class="tool-ui">
+          <div class="tool-header">
+            <div class="tool-header-dot"></div>
+            <div class="tool-header-label">Ops diagnosis &amp; 90-day plan generator</div>
+          </div>
+          <div class="tool-body">
+            <label class="tool-label" for="challenge">Describe your situation or challenge</label>
+            <textarea class="tool-textarea" id="challenge" placeholder="What's the problem? Be specific. The more context, the more useful the output..."></textarea>
+            <div class="tool-row">
+              <input class="tool-input" id="company-stage" placeholder="Company stage (e.g. Series A)">
+              <input class="tool-input" id="team-size" placeholder="Team size">
+            </div>
+            <div class="tool-row" style="margin-top:0.5rem">
+              <input class="tool-input" id="industry" placeholder="Industry or sector">
+              <button class="tool-submit" id="run-btn" onclick="runTool()">Generate plan &rarr;</button>
+            </div>
+            <div class="tool-loading" id="loading">
+              <div class="spinner"></div>
+              Picking up Artur's brain...
+            </div>
+            <div class="tool-error" id="tool-error"></div>
+            <div class="tool-output" id="tool-output"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="fade-in">
+        <div class="eyebrow">
+          <span class="eyebrow-num">05 /</span>
+          <span class="eyebrow-label">Let's talk</span>
+        </div>
+        <h2>The right move<br>starts with a<br>conversation.</h2>
+        <p class="section-sub" style="margin-top:0.75rem">
+          I'm not on the market for volume. I'm looking for one right fit: a company at an inflection point, a founder who needs a true operator, and a problem worth owning.
+        </p>
+        <div class="contact-links">
+          <a href="https://wa.me/48677487766" target="_blank" class="contact-link">
+            <div class="contact-link-icon" style="font-family:var(--font-mono);font-size:11px;color:var(--accent)">WA</div>
+            <div>
+              <div class="contact-link-label">WhatsApp · fastest route</div>
+              <div class="contact-link-value">+48 677 487 766</div>
+            </div>
+            <div class="contact-link-arrow">&#8594;</div>
+          </a>
+          <a href="mailto:arturgulinski@gmail.com" class="contact-link">
+            <div class="contact-link-icon" style="font-family:var(--font-mono);font-size:11px;color:var(--text2)">@</div>
+            <div>
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value">arturgulinski@gmail.com</div>
+            </div>
+            <div class="contact-link-arrow">&#8594;</div>
+          </a>
+          <a href="https://www.linkedin.com/in/artur-gulinski/" target="_blank" class="contact-link">
+            <div class="contact-link-icon" style="font-family:var(--font-mono);font-size:11px;color:var(--text2)">in</div>
+            <div>
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-value">linkedin.com/in/artur-gulinski</div>
+            </div>
+            <div class="contact-link-arrow">&#8594;</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="right-panel fade-in" style="transition-delay:0.15s">
+        <div class="avail-block">
+          <div class="avail-title">Availability status</div>
+          <div class="avail-status">
+            <span class="dot"></span>
+            Available from Q2 2026
+          </div>
+          <div class="avail-sub">Open to full-time COO, VP Ops, Head of People, or fractional engagement depending on the right fit.</div>
+        </div>
+        <div class="avail-title" style="margin-bottom:1rem">What I'm looking for</div>
+        <ul class="deal-list">
+          <li><span class="tag-yes">Yes</span> Remote-first or hybrid (EU / UK)</li>
+          <li><span class="tag-yes">Yes</span> Regulated industries: fintech, gaming, Web3</li>
+          <li><span class="tag-yes">Yes</span> Early-stage with real traction (Series A&ndash;C)</li>
+          <li><span class="tag-yes">Yes</span> Direct line to the founder / board</li>
+          <li><span class="tag-yes">Yes</span> Fractional or consulting engagements</li>
+          <li><span class="tag-no">No</span> Corporate matrix environments</li>
+          <li><span class="tag-no">No</span> Roles without real ownership</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">&#169; 2026 Artur Gulinski. Built to be found by the right people.</div>
+  <div class="footer-right">
+    <a href="https://www.linkedin.com/in/artur-gulinski/" target="_blank">LinkedIn</a>
+    <a href="https://blockleaders.io/artur-gulinski-the-people-first-operator-building-web3s-regulatory-backbone/" target="_blank">Press</a>
+    <a href="mailto:arturgulinski@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script>
+// Scroll fade-in
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// AI Tool
+async function runTool() {
+  const challenge = document.getElementById('challenge').value.trim();
+  if (!challenge) { showError('Please describe your challenge first.'); return; }
+
+  const stage = document.getElementById('company-stage').value.trim();
+  const size = document.getElementById('team-size').value.trim();
+  const industry = document.getElementById('industry').value.trim();
+  const btn = document.getElementById('run-btn');
+  const loading = document.getElementById('loading');
+  const output = document.getElementById('tool-output');
+  const errorEl = document.getElementById('tool-error');
+
+  btn.disabled = true;
+  loading.classList.add('visible');
+  output.classList.remove('visible');
+  errorEl.classList.remove('visible');
+  output.innerHTML = '';
+
+  const context = [stage && `Company stage: ${stage}`, size && `Team size: ${size}`, industry && `Industry: ${industry}`].filter(Boolean).join('. ');
+
+  const systemPrompt = `You are Artur Gulinski, a seasoned COO and operations leader. Background: managed 126 people across 10 Sainsbury's sites, scaled a Solana-based Web3 startup to $2M ARR in year one, co-built compliance infrastructure now under MOU with 2,500+ platforms, cut release cycles by 45% using OKRs and sprint frameworks. You think in systems, lead with people, diagnose before prescribing. You are direct, honest, and never use consulting-speak.
+
+When someone describes their operational challenge, give a sharp, structured first-take — exactly how you'd approach it on day one in the role.
+
+Respond in this exact JSON format with no other text:
+{"diagnosis":"2-3 sentences of honest diagnosis","priorities":["priority 1","priority 2","priority 3"],"plan":[{"phase":"Days 1-30","title":"short title","actions":["action 1","action 2","action 3"]},{"phase":"Days 31-60","title":"short title","actions":["action 1","action 2","action 3"]},{"phase":"Days 61-90","title":"short title","actions":["action 1","action 2","action 3"]}],"honest_note":"One direct observation they probably don't want to hear but need to"}`;
+
+  try {
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-5',
+        max_tokens: 1000,
+        system: systemPrompt,
+        messages: [{ role: 'user', content: `Challenge: ${challenge}${context ? '\nContext: ' + context : ''}` }]
+      })
+    });
+    if (!res.ok) throw new Error(res.status);
+    const data = await res.json();
+    const text = data.content?.find(b => b.type === 'text')?.text || '';
+    const parsed = JSON.parse(text.replace(/```json|```/g, '').trim());
+    renderOutput(parsed);
+  } catch(err) {
+    showError('Something went wrong. Try refreshing, or reach me directly on WhatsApp.');
+  } finally {
+    btn.disabled = false;
+    loading.classList.remove('visible');
+  }
+}
+
+function renderOutput(d) {
+  const output = document.getElementById('tool-output');
+  output.innerHTML = `
+    <div style="margin-bottom:1.25rem">
+      <div style="font-family:var(--font-mono);font-size:10px;color:var(--accent);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.5rem">DIAGNOSIS</div>
+      <p style="font-size:0.875rem;color:var(--text);line-height:1.7">${d.diagnosis}</p>
+    </div>
+    <div style="margin-bottom:1.25rem">
+      <div style="font-family:var(--font-mono);font-size:10px;color:var(--accent);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.5rem">TOP PRIORITIES</div>
+      ${d.priorities.map(p=>`<div style="font-size:0.875rem;color:var(--text2);padding:0.3rem 0 0.3rem 1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--accent)">&#8594;</span>${p}</div>`).join('')}
+    </div>
+    <div style="margin-bottom:1.25rem">
+      <div style="font-family:var(--font-mono);font-size:10px;color:var(--accent);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.75rem">90-DAY PLAN</div>
+      ${d.plan.map(phase=>`
+        <div style="margin-bottom:0.75rem;padding:0.875rem;background:var(--bg2);border-radius:6px;border:1px solid var(--border)">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:0.5rem;flex-wrap:wrap">
+            <span style="font-family:var(--font-mono);font-size:9px;color:var(--accent);letter-spacing:0.08em;background:var(--accent-dim);padding:2px 8px;border-radius:100px;white-space:nowrap">${phase.phase}</span>
+            <span style="font-size:0.8rem;font-weight:700;color:var(--text)">${phase.title}</span>
+          </div>
+          ${phase.actions.map(a=>`<div style="font-size:0.825rem;color:var(--text2);padding:0.25rem 0 0.25rem 1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--text3)">&#183;</span>${a}</div>`).join('')}
+        </div>
+      `).join('')}
+    </div>
+    <div style="padding:1rem;background:rgba(245,166,35,0.07);border:1px solid rgba(245,166,35,0.18);border-radius:6px;margin-bottom:1rem">
+      <div style="font-family:var(--font-mono);font-size:10px;color:var(--amber);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.4rem">HONEST NOTE</div>
+      <p style="font-size:0.85rem;color:var(--text2);line-height:1.65">${d.honest_note}</p>
+    </div>
+    <div style="padding-top:0.75rem;border-top:1px solid var(--border);text-align:center">
+      <a href="https://wa.me/48677487766" target="_blank" style="font-family:var(--font-mono);font-size:11px;color:var(--accent);letter-spacing:0.06em;text-decoration:none">This resonates? Let's talk &#8594; wa.me/48677487766</a>
+    </div>`;
+  output.classList.add('visible');
+  output.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function showError(msg) {
+  const el = document.getElementById('tool-error');
+  el.textContent = msg;
+  el.classList.add('visible');
+}
+</script>
+</body>
+</html>
